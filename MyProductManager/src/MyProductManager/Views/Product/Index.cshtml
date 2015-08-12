@@ -1,0 +1,35 @@
+﻿@model IEnumerable<MyProductManager.Models.Product>
+
+<h2>Products</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Display Name</th>
+        <th>MSRP</th>
+        <th>Current Price</th>
+        <th>Category</th>
+    </tr>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.ProductId</td>
+            <td>@product.DisplayName</td>
+            <td>@product.MSRP</td>
+            <td>@product.CurrentPrice</td>
+
+            @if (product.Category != null)
+            {
+                <td>@product.Category.DisplayName</td>
+            }
+            else
+            {
+                <td class="text-danger">category property is null</td>
+            }
+        </tr>
+    }
+</table>

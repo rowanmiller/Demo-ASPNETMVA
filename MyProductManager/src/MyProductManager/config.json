@@ -1,0 +1,3 @@
+{
+  "productDatabase" : "Server=(localdb)\\mssqllocaldb;Database=Products;Trusted_Connection=True;" 
+}

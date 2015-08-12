@@ -1,0 +1,26 @@
+﻿@model IEnumerable<MyProductManager.Models.Category>
+
+<h2>Categories</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>Category ID</th>
+        <th>Display Name</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var category in Model)
+    {
+        <tr>
+            <td>@category.CategoryId</td>
+            <td>@category.DisplayName</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = category.CategoryId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = category.CategoryId })
+            </td>
+        </tr>
+    }
+</table>
