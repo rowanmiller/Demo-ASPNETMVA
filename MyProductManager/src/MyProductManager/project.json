@@ -15,6 +15,7 @@
         "Microsoft.Framework.Logging.Console": "1.0.0-beta6",
         "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-beta6",
         "EntityFramework.SqlServer": "7.0.0-beta6",
+        "EntityFramework.SqlServer.Design": "7.0.0-beta6",
         "EntityFramework.Commands": "7.0.0-beta6",
         "EntityFramework.Core": "7.0.0-beta6"
     },

@@ -14,3 +14,4 @@ Further configuring what is detected by convention (fluent API and migrations)
 Testing with an in-memory database
 
 Cover the "what it looks like if I have an existing database" question
+dnx . ef revEng "Server=(localdb)\mssqllocaldb;Database=Promotions;Trusted_Connection=True;" EntityFramework.SqlServer

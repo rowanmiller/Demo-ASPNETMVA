@@ -123,6 +123,24 @@
           "lib/net45/EntityFramework.SqlServer.dll": {}
         }
       },
+      "EntityFramework.SqlServer.Design/7.0.0-beta6": {
+        "dependencies": {
+          "EntityFramework.Relational.Design": "7.0.0-beta6",
+          "EntityFramework.SqlServer": "7.0.0-beta6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.Design.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.Design.dll": {}
+        }
+      },
       "Ix-Async/1.2.4": {
         "frameworkAssemblies": [
           "System",
@@ -1696,6 +1714,18 @@
         },
         "runtime": {
           "lib/dnxcore50/EntityFramework.SqlServer.dll": {}
+        }
+      },
+      "EntityFramework.SqlServer.Design/7.0.0-beta6": {
+        "dependencies": {
+          "EntityFramework.Relational.Design": "7.0.0-beta6",
+          "EntityFramework.SqlServer": "7.0.0-beta6"
+        },
+        "compile": {
+          "lib/dnxcore50/EntityFramework.SqlServer.Design.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/EntityFramework.SqlServer.Design.dll": {}
         }
       },
       "Ix-Async/1.2.4": {
@@ -4250,6 +4280,20 @@
         "lib/dnxcore50/EntityFramework.SqlServer.xml",
         "lib/net45/EntityFramework.SqlServer.dll",
         "lib/net45/EntityFramework.SqlServer.xml",
+        "repo.json"
+      ]
+    },
+    "EntityFramework.SqlServer.Design/7.0.0-beta6": {
+      "serviceable": true,
+      "sha512": "6bKVAL3YrsspZUlQmzhPC5aUGE56P7pBZZ5jdpl7UdsArIrRT9tc1wvQlyIiGwOZjyVrt+lvWPZTobaKL17wBQ==",
+      "files": [
+        "EntityFramework.SqlServer.Design.7.0.0-beta6.nupkg",
+        "EntityFramework.SqlServer.Design.7.0.0-beta6.nupkg.sha512",
+        "EntityFramework.SqlServer.Design.nuspec",
+        "lib/dnxcore50/EntityFramework.SqlServer.Design.dll",
+        "lib/dnxcore50/EntityFramework.SqlServer.Design.xml",
+        "lib/net45/EntityFramework.SqlServer.Design.dll",
+        "lib/net45/EntityFramework.SqlServer.Design.xml",
         "repo.json"
       ]
     },
@@ -7571,6 +7615,7 @@
       "Microsoft.Framework.Logging.Console >= 1.0.0-beta6",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-beta6",
       "EntityFramework.SqlServer >= 7.0.0-beta6",
+      "EntityFramework.SqlServer.Design >= 7.0.0-beta6",
       "EntityFramework.Commands >= 7.0.0-beta6",
       "EntityFramework.Core >= 7.0.0-beta6"
     ],
